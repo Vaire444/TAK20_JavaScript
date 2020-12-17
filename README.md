@@ -1,1 +1,1 @@
-# JavaScriptVIKK
+# JavaScript_assignments
