@@ -1,4 +1,4 @@
-##Ülesanne 5
+## Ülesanne 5
 
 Loo programm (numbrite arvamise mäng), mis laseb kasutajal arvata numbreid vahemikus 1 - 10.
 
