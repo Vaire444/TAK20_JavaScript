@@ -8,7 +8,7 @@ Tingimuslausete (IF, ELSE IF, ELSE) ja muutujate arvu piiranguid pole.
 
 Vihje: väljundiks on küll numbrid aga tegu on siiski stringiga, mille sisu on number/numbrid.
 
-Tulemus peaks konsoolis välja nägema täpselt selline:
+Tulemus peaks konsoolis välja nägema täpselt selline (ilma punktideta):
 
 * 1
 * 12
