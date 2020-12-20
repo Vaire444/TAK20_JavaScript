@@ -1,6 +1,6 @@
 Ülesanne 1
 
-1. Vasta küsimustele:Mis on HTML tag "<noscript>"? Milleks seda kasutatakse ja mis on sellel seost
+1. Mis on HTML tag "<noscript>"? Milleks seda kasutatakse ja mis on sellel seost
 Javascriptiga?
 
 Tag-i <noscript> määratleb alternatiivse sisu, mida kuvatakse kasutajatele, kes on brauseris skriptid keelanud või
