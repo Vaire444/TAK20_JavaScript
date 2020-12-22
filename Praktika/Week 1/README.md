@@ -1,5 +1,5 @@
 # Kodutöö nr. 1 ülesanded
-[Avaleht](../../README.md) > [Praktika](../README.md) > Nädal 1
+[Avaleht](../../README.md) > [Praktika](../README.md) > Week 1
 
 * [Korrutustabel](./korrutustabel)
 * [Palindroom](./palindroom)
