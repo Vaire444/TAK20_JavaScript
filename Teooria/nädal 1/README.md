@@ -1,4 +1,5 @@
-## Ülesanne 1
+## Kodutöö ülesanne 1
+[Avaleht](../../README.md) > [Teooria](../README.md) > Kodutöö nr. 1
 
 1. Mis on HTML tag "<noscript>"? Milleks seda kasutatakse ja mis on sellel seost
 Javascriptiga?
