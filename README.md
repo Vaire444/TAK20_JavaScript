@@ -3,5 +3,5 @@
 
 Viited ülesannetele ning nende lahendustele:
 
-* [Teooria](./teooria/README.md)
+* [Teooria](./Teooria/README.md)
 * [Praktika](./praktika/README.md)
