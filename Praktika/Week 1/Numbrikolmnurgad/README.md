@@ -1,4 +1,4 @@
-# Numbrite kolmnurgad ([Live demo](https://lennar.eu/vikk/javascript/praktika/1/kolmnurgad/))
+# Numbrite kolmnurgad
 [Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week 1](../README.md) > Numbrite kolmnurgad  
 
 Kirjuta tsükkel, mis prindib konsooli numbreid (vaata tulemuse näidet). 
