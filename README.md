@@ -4,4 +4,4 @@
 Viited ülesannetele ning nende lahendustele:
 
 * [Teooria](./Teooria/README.md)
-* [Praktika](./praktika/README.md)
+* [Praktika](./Praktika/README.md)
