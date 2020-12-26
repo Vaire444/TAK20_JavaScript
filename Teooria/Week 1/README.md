@@ -54,6 +54,7 @@ Javascriptil, on see sõltumatu programmeerimiskeeltest. Nagu XML, on ka JSON li
 andmeid organiseeritult. JSON on kergekaaluline, mis tähendab vähem teksti, paremat loetavust ning masina
 puhul kiiremat töötlemist.
 
+```bash
 {
 “students”: [
 { "firstname": "Kevin-Anders", "lastname": "Kalamees" },
@@ -63,7 +64,7 @@ puhul kiiremat töötlemist.
 { "firstname": "Kristian", "lastname": "Kõiv" }
 ]
 }
-
+```
 8. Mis on AJAX? Mis on peamine piirang AJAX päringu teostamisel?
 Vihje: Vastuse piirangu osas leiab siit: https://www.w3schools.com/js/js_ajax_http.asp
 
