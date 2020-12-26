@@ -20,6 +20,7 @@ DOM on standardiseeritud W3C poolt.
 4. Mis on skoop (ingl.k "scope") programmeerimise mõistes?
 Vihje: https://www.w3schools.com/js/js_scope.asp
 
+bash
 JavaScriptis on kahte tüüpi skoope:
 ● Kohalik skoop
 ● Globaalne skoop
