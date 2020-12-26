@@ -4,7 +4,7 @@
 1. Mis on HTML tag ``` "<noscript>" ``` ? Milleks seda kasutatakse ja mis on sellel seost
 Javascriptiga?
 
-Tag-i <noscript> määratleb alternatiivse sisu, mida kuvatakse kasutajatele, kes on brauseris skriptid keelanud või
+Tag-i ``` <noscript> ``` määratleb alternatiivse sisu, mida kuvatakse kasutajatele, kes on brauseris skriptid keelanud või
 kellel on brauser, mis skripti ei toeta.
 
 2. Mis on Vanilla Javascript (kirjapilt tihti ka VanillaJS)?
@@ -20,7 +20,7 @@ DOM on standardiseeritud W3C poolt.
 4. Mis on skoop (ingl.k "scope") programmeerimise mõistes?
 Vihje: https://www.w3schools.com/js/js_scope.asp
 
-bash
+
 JavaScriptis on kahte tüüpi skoope:
 ● Kohalik skoop
 ● Globaalne skoop
@@ -74,13 +74,13 @@ Asünkroonne JavaScript ja XML – lühend AJAX võeti kasutusele 2005.a. ja sel
 interaktiivsete veebirakenduste loomise meetodit, kus toimub jooksev kulissidetagune andmevahetus brauseri ja
 veebiserveri vahel, nii et kasutaja iga liigutuse peale pole vaja kogu veebilehte uuesti alla laadida.
 
-9. Mis vahe on kui javascript pannakse HTML-s <head> tagide vahele vs <body> tagide vahele vahetult
-enne </body> tagi?
+9. Mis vahe on kui javascript pannakse HTML-s ``` <head> ``` tagide vahele vs ``` <body> ``` tagide vahele vahetult
+enne ``` </body> ``` tagi?
 Vihje: https://www.w3schools.com/js/js_whereto.asp
 
 HTML-dokumenti saate paigutada suvalise arvu skripte.
-Skripte saab paigutada HTML-lehe jaotisesse <body> või <head> või mõlemasse.
-Skriptide paigutamine elemendi <body> alaossa parandab kuva kiirust, kuna skripti tõlgendamine aeglustab
+Skripte saab paigutada HTML-lehe jaotisesse ``` <body> ``` või ``` <head> ``` või mõlemasse.
+Skriptide paigutamine elemendi ``` <body> ``` alaossa parandab kuva kiirust, kuna skripti tõlgendamine aeglustab
 kuva.
 
 10. Võta lahti mõni veebileht Google Chromega. Ava konsool (CTRL + Shift + j) ja trüki konsooli järgnev:
