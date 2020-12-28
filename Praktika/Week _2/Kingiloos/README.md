@@ -23,13 +23,13 @@ Pane tähele, et tekkinud paarid ei tee omavahel kingitusi (kui just juhuslikult
 Samuti ei tohi loosimisel tekkida olukorda, kus isik teeb iseendale kingituse.
 
 Näide:
-´´´bash
+```bash
 nimed = Juuli, Maali, Ärni
-´´´
+```
 Tulemus:
-´´´bash
+```bash
 Juuli -> Maali,
 Maali -> Ärni,
 Ärni -> Juuli
-´´´
+```
 Tekkinud tulemused kuva kasutajale.
