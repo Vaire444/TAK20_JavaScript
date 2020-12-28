@@ -1,5 +1,5 @@
 # Korrutustabel
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week1](../README.md) > Korrutustabel 
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_1](../README.md) > Korrutustabel 
 
 
 Loo programm, mis prindib konsooli järgneva (korrutustabeli):  
