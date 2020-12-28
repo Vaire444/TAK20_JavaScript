@@ -1,5 +1,5 @@
 # Palindroom
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week 1](../README.md) > Palindroom  
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_1](../README.md) > Palindroom  
 
 Küsi kasutajalt sisestuseks suvaline sõna või fraas.  
 
