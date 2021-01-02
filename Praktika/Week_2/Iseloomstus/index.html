@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dešifreerimine</title>
+</head>
+
+<body>
+
+    <h1>Iseloomustuse dešifreerimine</h1>
+    <p>Vajuta 'Näita' nuppu ja sa näed dešifreeritud iseloomustust</p>
+
+    <textarea id="myTextarea" rows="15" cols="90" wrap="hard">
+        Arendaja Pinu on töötaja, kelle leiate enamasti
+        uusi lahendusi loomas. Pinu töötab väga efektiivselt, ega käi
+        tööaega kolleegidega kohvitamise peale raiskamas. Reeglina on
+        ta lahkesti nõus kolleege juhendama, ning kunagi ei jää seetõttu
+        tal tööülesanded tähtajaks täitmata. Tihti peab aeganõudvaid lisa-
+        kohustusi ja oma oskuste täiendamist tähtsamaks kui kohvi-
+        pause. Teda iseloomustab tõsiasi, et tal pole vähimalgi määral
+        edevust, olgugi et ta on demonstreerinud äärmiselt põhjalikke
+        erialaseid teadmisi. Olen kindlalt veendunud, et Pinu ei ole
+        osakonnas mitte ainult vajalik, vaid noorusele vaatamata lausa
+        asendamatu töötaja. Soovitan juhatusel Pinu tingimata
+        edutada, mis võib omakorda ka teistes töötajates motivatsioonipuhangu
+        vallandada.
+        </textarea>
+    <br>
+    <input id="submit" type='submit' value='Näita' class='decodeSubmit'>
+
+    <script>
+
+        let decodeSubmit = document.querySelector('.decodeSubmit');
+        let myTextarea = document.getElementById('myTextarea');
+        let submit = document.getElementById('submit');
+
+        decodeSubmit.addEventListener('click', myFunction);
+
+        function myFunction() {
+            let textarea = myTextarea.value;
+            let arr = textarea.split('\n');
+            let text = "";
+            for (let i = 0; i < arr.length; i += 2) {
+                text += arr[i] + '\n';
+            }
+            myTextarea.defaultValue = text;
+            submit.disabled = 'true';
+        }
+    </script>
+</body>
+
+</html>
