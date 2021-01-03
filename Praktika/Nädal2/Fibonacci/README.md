@@ -1,5 +1,5 @@
 # Fibonacci
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_2](../README.md) > Fibonacci
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Fibonacci
 
 Harilik küülik hr. Fibonacci viibib väga pikalt komandeeringutes.  
 
