@@ -4,5 +4,5 @@
 * [Kingiloos](./Kingiloos)
 * [Iseloomustus](./Iseloomustus)
 * [Koodimurdja](./Koodimurdja)
-* [Koodimurdja](./Fibonacci)
-* [Koodimurdja](./Korrutustabel)
+* [Fibonacci](./Fibonacci)
+* [Korrutustabel](./Korrutustabel)
