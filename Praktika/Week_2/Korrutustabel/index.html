@@ -68,6 +68,9 @@
                     cell.innerText = i * j;
                     cell.classList.add('iightBlue');
                 }
+                if (i === j) {
+                        cell.style.fontWeight = 'bold';
+                    }
             }
         }
         document.body.appendChild(table);
