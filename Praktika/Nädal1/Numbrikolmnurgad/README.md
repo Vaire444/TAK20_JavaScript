@@ -1,5 +1,5 @@
 # Numbrite kolmnurgad
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_1](../README.md) > Numbrite kolmnurgad  
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal1](../README.md) > Numbrite kolmnurgad  
 
 Kirjuta tsükkel, mis prindib konsooli numbreid (vaata tulemuse näidet). 
 
