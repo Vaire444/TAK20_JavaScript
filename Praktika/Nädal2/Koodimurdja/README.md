@@ -1,5 +1,5 @@
 # Koodimurdja
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_2](../README.md) > Koodimurdja
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Koodimurdja
 
 Sul oli äsja üsna lõbus firmapidu, mis läks pikale.  
 Jõuad koju, kus uksest sisenemiseks on vaja toksida 4-kohaline pääsukood.  
