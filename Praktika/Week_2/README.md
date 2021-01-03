@@ -6,3 +6,4 @@
 * [Koodimurdja](./Koodimurdja)
 * [Fibonacci](./Fibonacci)
 * [Korrutustabel](./Korrutustabel)
+* [Binaarkood](./Binaarkood)
