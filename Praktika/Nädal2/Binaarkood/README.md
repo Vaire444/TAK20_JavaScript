@@ -1,5 +1,5 @@
 # Pakitud binaarkood
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_2](../README.md) > Pakitud binaarkood
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Pakitud binaarkood
 
 On lihtsa algoritmiga kokku pakitud binaarkood, mille tulemiks on arvude jada:
 
