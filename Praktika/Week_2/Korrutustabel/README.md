@@ -1,5 +1,5 @@
 # Korrutustabel
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Kodutöö nr. 2](../README.md) > Korrutustabel
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Korrutustabel
 
 Kirjuta programm, mis lehe laadides tekitab sellise korrutustabeli:  
 ![korrutustabel](./Korrutustabel.png)  
