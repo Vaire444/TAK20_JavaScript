@@ -1,5 +1,5 @@
 # Iseloomustus
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_2](../README.md) > Iseloomustus
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Iseloomustus
 
 Kirjuta programm, mis võtab eeltäidetud HTML `<textarea>` elemendist teksti 
 (read ja reavahetused peavad olema täpselt samad):
