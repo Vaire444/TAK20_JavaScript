@@ -1,5 +1,5 @@
 ## Praktilised ülesanded
-[Avaleht](../../README.md) > [Praktika](../README.md) > Week_2
+[Avaleht](../../README.md) > [Praktika](../README.md) > Nädal2
 
 * [Kingiloos](./Kingiloos)
 * [Iseloomustus](./Iseloomustus)
