@@ -2,7 +2,7 @@
 [Avaleht](../../../README.md) > [Praktika](../../README.md) > [Kodutöö nr. 2](../README.md) > Korrutustabel
 
 Kirjuta programm, mis lehe laadides tekitab sellise korrutustabeli:  
-![korrutustabel](../../../assets/images/table.png)  
+![korrutustabel](../Korrutustabel.png)  
 
 Kasutage HTML `<table>` elementi.
 
