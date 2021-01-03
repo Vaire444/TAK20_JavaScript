@@ -1,5 +1,5 @@
 # Numbrite arvamine
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_1](../README.md) > Numbrite arvamine   
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal1](../README.md) > Numbrite arvamine   
 
 
 Loo programm, mis laseb kasutajal arvata numbreid vahemikus `1 - 10`. 
