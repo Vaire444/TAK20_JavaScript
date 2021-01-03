@@ -1,5 +1,5 @@
 # Kingiloos
-[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Week_2](../README.md) > Kingiloos
+[Avaleht](../../../README.md) > [Praktika](../../README.md) > [Nädal2](../README.md) > Kingiloos
 
 Kirjuta rakendus, kus on üks tekstiväli ja nupp nimede sisestamiseks.
 Tekstiväljale nime kirjutades ja nuppu vajutades lisatakse nimi massiivi.
