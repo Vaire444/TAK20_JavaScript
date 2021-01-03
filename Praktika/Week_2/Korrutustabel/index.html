@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+
+    <title>Korrutustabel</title>
+
+    <style>
+        table {
+            border-spacing: 0px;
+            margin: 40px auto;
+        }
+
+        table td {
+            border: 1px solid #cfcfcf;
+            text-align: center;
+            height: 40px;
+            width: 40px;
+        }
+
+        .iightBlue {
+            background-color: #e2e8fa;
+        }
+
+        .blue {
+            background-color: #2074d4;
+            color: #eff6fc;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="text-align: center">Korrutustabel</h1>
+
+</body>
+<script>
+
+    window.onload = function multiplicationTable() {
+        const table = document.createElement('table');
+
+
+        for (let i = 0; i < 11; i++) {
+            const row = table.insertRow(-1);
+
+            for (let j = 0; j < 11; j++) {
+                const cell = row.insertCell(-1);
+
+                if (i === 0 && j === 0) {
+                    cell.innerHTML = '&times;'; //&times ehk × on korrutusumärk
+                    cell.classList.add('blue');
+
+                }
+                else if (j === 0 && i > 0) {
+                    cell.innerText = i;
+                    cell.classList.add('blue');
+
+                }
+                else if (i === 0 && j > 0) {
+                    cell.innerText = j;
+                    cell.classList.add('blue');
+
+                } else {
+                    cell.innerText = i * j;
+                    cell.classList.add('iightBlue');
+                }
+            }
+        }
+        document.body.appendChild(table);
+    }
+
+
+</script>
+
+<body>
+
+</html>
