@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fibonacci</title>
 </head>
+
 <body>
 
     <h3>Fibonacci arvud ehk Fibonacci jada</h3>
 
     <p>Sisesta number 1-25</p>
 
-    <input type="number" id="myNumber"  max="25" placeholder="Sisesta number 1-25">
-    
+    <input type="number" id="myNumber" value="1" max="25" placeholder="Sisesta number 1-25">
+
     <p>Vajuta nupule, et saada Fibonacci jada n. number!</p>
-    
+
     <button onclick="myFunction()">Arvuta</button>
-    
-      <p id="fibo"></p>
-    
+
+    <p id="fibo"></p>
+
     <script>
-    function myFunction() {
-      let x = document.getElementById("myNumber").value;
-      document.getElementById("fibo").innerHTML =  `&#129488 Fibonacci jada ${x}. number on ${fib(x)} `;
-    }
+        function myFunction() {
+            let x = document.getElementById("myNumber").value;
+            document.getElementById("fibo").innerHTML = `&#129488 Fibonacci jada ${x}. number on ${fib(x)} `;
+        }
 
-
-    
         function fib(n) {
             if (n <= 1) return n;
             return fib(n - 1) + fib(n - 2);
         }
 
     </script>
-    
+
 </body>
+
 </html>
