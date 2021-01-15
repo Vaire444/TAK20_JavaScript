@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validaator</title>
+</head>
+
+<body>
+
+    <h2>Eesti IBAN koodi validaator</h2>
+    <input id="iban" type="text" value="" placeholder="Sisesta IBAN kood">
+    <button id="ibanInput">Valideeri</button>
+    <p id="result"></p>
+
+    <script>
+
+        const ibanElement = document.getElementById('ibanInput');
+        const ibanCode = document.getElementById('iban');
+        ibanElement.addEventListener('click', validate);
+
+        function validate() {
+            let ibanCodeNr = ibanCode.value;
+
+            if (ibanCodeNr.length == 20 && /[E]{2}\d{18}/.test(ibanCodeNr)) {
+                ibanCodeNr = ibanCodeNr.substring(4) + '1414' + ibanCodeNr.substring(2, 4);
+                let ibanNum = BigInt(ibanCodeNr);
+                let ibanRem = ibanNum % BigInt(97);
+
+                if (ibanRem == 1) {
+                    document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood ' + ibanCode.value + ' vastab nõuetele!';
+                    ibanCode.value = '';
+                } else {
+                    ibanRem = BigInt(98) - ibanRem;
+                    if (ibanRem <= 9) {
+                        ibanCntrl = '0' + ibanRem;
+                    } else {
+                        ibanCntrl = String(ibanRem);
+                    }
+                    ibanCodeNr = ibanCode.value;
+                    ibanCodeNr = ibanCodeNr.substring(2, 4)
+                    if (ibanCodeNr == ibanCntrl) {
+                        document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood ' + ibanCode.value + ' vastab nõuetele!';
+                        ibanCode.value = '';
+                    } else {
+                        document.getElementById("result").innerHTML = 'Sinu sisestatud IBAN kood  <b>' + ibanCode.value + '</b> ei vasta nõuetele!';
+                        ibanCode.value = '';
+                    }
+                }
+            } else {
+                document.getElementById("result").innerHTML = 'Sinu sisestatud IBAN kood  <b>' + ibanCode.value + '</b> ei vasta nõuetele!';
+                ibanCode.value = '';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
