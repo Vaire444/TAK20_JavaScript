@@ -29,7 +29,7 @@
                 let ibanRem = ibanNum % BigInt(97);
 
                 if (ibanRem == 1) {
-                    document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood ' + ibanCode.value + ' vastab nõuetele!';
+                    document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood <b>' + ibanCode.value + '</b> vastab nõuetele!';
                     ibanCode.value = '';
                 } else {
                     ibanRem = BigInt(98) - ibanRem;
@@ -41,7 +41,7 @@
                     ibanCodeNr = ibanCode.value;
                     ibanCodeNr = ibanCodeNr.substring(2, 4)
                     if (ibanCodeNr == ibanCntrl) {
-                        document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood ' + ibanCode.value + ' vastab nõuetele!';
+                        document.getElementById('result').innerHTML = 'Sinu sisestatud IBAN kood <b>' + ibanCode.value + '</b> vastab nõuetele!';
                         ibanCode.value = '';
                     } else {
                         document.getElementById("result").innerHTML = 'Sinu sisestatud IBAN kood  <b>' + ibanCode.value + '</b> ei vasta nõuetele!';
