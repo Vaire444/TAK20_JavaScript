@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="iban" type="text" value="" placeholder="Sisesta IBAN kood">
+    <button id="ibanInput">valideeri</button>
+
+
+    <script>
+
+        console.log('skript algab')
+        const ibanElement = document.getElementById('ibanInput');
+        const ibanCode = document.getElementById('iban');
+        console.log('*' + ibanCode + '*') // testin, kas ma saan sisestatud väärtuse
+        ibanElement.addEventListener('click', validate);
+
+        console.log(/[E]{2}\d{18}/.test('EE021010010126347012')); // testin, kas õige nr annab true
+        console.log(/[E]{2}\d{18}/.test('EX021010010126347012')); // testin, kas vale numbriga annab false
+
+        function validate() {
+            console.log('valdation start');
+            let ibanCodeNr = ibanCode.value;
+
+            console.log('*' + ibanCodeNr + '*')
+            console.log(ibanCodeNr.length)
+
+            if (ibanCodeNr.length == 20 && /[E]{2}\d{18}/.test(ibanCodeNr)) {
+                console.log('Vastab regexile')
+
+                console.log(ibanCodeNr.substring(2, 4)) //meetod eraldab tähemärgid stringist kahe määratud indeksi vahel ja tagastab uue alamstringi
+                console.log(ibanCodeNr.substring(4)) // meetod eraldab tähemärgid stringist ühe määratud indeksi algusest kuni lõpuni ja tagastab uue alamstringi
+                console.log(ibanCodeNr.substring(4) + '*1414*' + ibanCodeNr.substring(2, 4)) // prindin tulemuse konsooli kontrollimiseks, kas on nii nagu ma soovin // E=14 EE=1414
+
+                ibanCodeNr = ibanCodeNr.substring(4) + '1414' + ibanCodeNr.substring(2, 4)
+                let ibanNum = BigInt(ibanCodeNr) //BigInt on sisseehitatud objekt, mis võimaldab kujutada täisarvusid, mis on suuremad, kui 2 astmes 53 -1 
+
+                console.log(ibanNum); // trükin konsooli, kontrollimaks, kas tulemus on number
+                let ibanRem = ibanNum % BigInt(97); //BigInt ibanNum tehte tegemisel peavad mõlemad arvud olema BigInt tüüpi number, erinevaid tüüpe ei saa kokku panna
+                console.log(ibanRem); // trükin konsooli jagamise jäägi
+
+
+                if (ibanRem == 1) { // kontrollin, kas jääk võrdub 1
+
+                    console.log('IBAN vastab nõuetele1') // kui jääk on 1, siis IBAN vastab nõuetele
+                } else {
+
+                    console.log('kontrollin kontrolljärguga') // kui jääk i ol1, siis kontrollin kontrolljärguga
+                    ibanRem = BigInt(98) - ibanRem; 
+                    console.log(ibanRem); // trükin konsooli tulemuse
+                    if (ibanRem <= 9) {
+                        ibanCntrl = '0' + ibanRem;
+                    } else {
+                        ibanCntrl = String(ibanRem);
+                    }
+                    console.log(ibanCntrl); // kontrollin
+
+                    ibanCodeNr = ibanCode.value;
+
+                    ibanCodeNr = ibanCodeNr.substring(2, 4)
+                    if (ibanCodeNr == ibanCntrl) {
+                        console.log('IBAN vastab nõuetele2')
+                    } else {
+                        console.log('IBAN ei vasta nõuetele1')
+                    }
+                }
+
+            } else {
+                console.log('IBAN ei vasta nõuetele2')
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
