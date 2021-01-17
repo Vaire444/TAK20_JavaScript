@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <style>
+        p {
+            color: coral;
+            font-size: 25px;
+        }
+
+        .test3 {
+            font-family: fantasy;
+            font-size: 30px;
+            color: darkmagenta;
+        }
+
+        .test4 {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 10px;
+            background-color: #a7e48f;
+            padding: 10px;
+        }
+
+        .test4>div {
+            background-color: rgb(221, 243, 186);
+            text-align: center;
+            color: rgb(61, 58, 43);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class=''>
+        <div>ELU</div>
+        <div>ON</div>
+        <div>LILL!</div>
+    </div>
+
+    <p class="test1">Elu on lill!</p>
+    <button>Muuda</button>
+
+    <script>
+        $('button').click(function () {
+            $('<H2>Sain hakkama!<H2>').replaceAll('p');
+            $('div').addClass('test4');
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
