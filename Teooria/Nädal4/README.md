@@ -107,7 +107,7 @@ function calculate(vanus) {
 }
 alert('Te olete ' + calculate(21));
 ```
-
+[Kood](./codereview.js)
 
 ### Ülesanne 5 (Levinud praktikad)
 
@@ -166,7 +166,7 @@ Näiteks kasutad jQuery stiilis selectorite abi HTML elemendi valimiseks koodis 
 
 #### Vastuskood
 
-![jQuery](./index.html) 
+[jQuery](./index.html) 
 
 
 ### Ülesanne 7 (Valikuline ülesanne - veebipoe parandused)
