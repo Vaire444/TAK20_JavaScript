@@ -14,7 +14,9 @@ DDN (Content Delivery Network) on sisuedastusvõrk, veebisaidi sisu vahemällu s
 ```
 
 2. Mis on VCS (Version Control System) e versioonihaldus ja mis eesmärke see täidab tarkvaraarenduses? Too näiteid populaarseimatest VCS -dest.
+
 Versioonijuhtimissüsteem võimaldab kasutajatel tarkvaraarendusprojektide muudatusi jälgida ja võimaldab neil nendes projektides koostööd teha. Selle abil saavad arendajad töötada koodi koostöös ja eraldada oma ülesanded harude kaudu. Arendajad saavad vajadusel koodi muudatusi kombineerida. Lisaks saavad nad vaadata muudatuste ajalugu, minna tagasi eelmise(te) versiooni juurde ja kasutada/hallata koodi soovitud viisil. Versioonijuhtimissüsteemi kasutamise peamised eelised hõlmavad arendusprotsessi sujuvamaks muutmist, mitme projekti koodi haldamist ja kõigi muudatuste ajaloo säilitamist koodis.
+
 Populaarseimad VCS-id GitHub, GitLab, Beanstalk, PerForce, Apache Subversion, AWS CodeCommit, Microsoft Team Foundation Server, Mercurial
 
 3. Mis on code-review? Miks seda tehakse? Kes seda tegema peaks?
@@ -34,6 +36,7 @@ Ole enda vastu aus - kasuta vaid seni omandatud teadmisi.
 ### Ülesanne 3 (Javascripti "uuemad" featuurid)
 
 Seni tunnis käsitlemata aga levinud Javascripti konstruktsioonid. Loe viidatud artiklid läbi, proovi seni tehtud praktiliste ülesannete peal kasutada mõnda neist konstruktsioonidest.
+
 * Arrow functions (https://javascript.info/arrow-functions-basics | https://codeburst.io/javascript-arrow-functions-for-beginners-926947fc0cdc)
 * Rest operator/parameters (https://www.geeksforgeeks.org/javascript-rest-operator/ | https://javascript.info/rest-parameters-spread)
 * Spread operator (https://codeburst.io/javascript-the-spread-operator-a867a71668ca | https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
@@ -75,6 +78,7 @@ Kasutades kõiki Javascripti kursusel (kui ka muudes tundides ja iseseisvalt) õ
 Tooge välja kõik vead (süntaksi vead, nõuetele vastavus, koodistiil, koodi formaatimine, koodi optimaalsus jne) ning pakkuge välja ka omapoolne lahendus, et praktikant seeläbi õpiks.
 
 #### Vigade kirjeldus
+
 * Muutujate defineerimiseks kasutada, kas `let` või `var` aga mitte mõlemaid segamini. Eelistada `let`. Antud näites tuleb kasutada `const`, sest need muutujad peavad olema konstantsed
 * Kui koodis kasutatakse vaid korra konstantset muutujat, siis ei ole neid vajadus eraldi deklareerida. (!? pole päris kindel)
 * Antu näite korral kasutada `If else_if else` tingimuslauset, mitte ainult `if`-e
@@ -110,16 +114,16 @@ alert('Te olete ' + calculate(21));
 Lugege järgnevat artiklit: https://medium.freecodecamp.org/3-questions-to-watch-out-for-in-a-javascript-interview-725012834ccb
 
 ##### Vastake küsimustele:
-* Mis on event delegation ja mis juhtudel ta hea on?
+#### * Mis on event delegation ja mis juhtudel ta hea on?
 ##### Vastus:
 Selle asemel, et määrata igale indviduaalsele üksusele eraldi event listener, määratakse üks event listener kogu konteinerile. 
 Seda on mõislik kasutda siis, kui on palju(rohkem, kui 10) individuaalseid üksusi, mida on vaja event listeneriga välja kutsuda.
 
-* Mis on closure?
+#### * Mis on closure?
 ##### Vastus:
 Closuer on see, kui sisemisel funktsioonil on juurdepääs välisele muutujale väljaspool oma skoopi.
 
-* Mis on throttling? Milleks see hea on?
+#### * Mis on throttling? Milleks see hea on?
 ##### Vastus:
 Throttling jõustab funktsiooni maksimaalse arvu kordi, mida saab aja jooksul kutsuda. 
 ```
@@ -128,7 +132,7 @@ Throttling jõustab funktsiooni maksimaalse arvu kordi, mida saab aja jooksul ku
 ```
 Seda kasutatakse siis, kui on vajadus piirata funktsiooni käivitamist.
 
-* Mis on debouncing? Milleks see hea on?
+#### * Mis on debouncing? Milleks see hea on?
 ##### Vastus:
 Debouncing jõustab funktsiooni vaid kindla tegevuse lõpetamisel.
 Debounce'i tehnika võimaldab meil "rühmitada" mitu järjestikust kutset ühte.
@@ -139,16 +143,20 @@ Ressursside optimeerimiseks.
 ### Ülesanne 6 (jQuery)
 
 * Mis on üks kõige enam kasutatud javascripti teek jQuery?
+
 Annab võimaluse lihtsalt saada ligipääs igale DOM elemendile, teha pöördumist DOM atribuutidele ja manipuleerida nendega. Lisaks võimaldab jQuery töödeldada erinavaid sündmusi ning luua animatsioone ja visuaalseid effekte.
 
 * Too välja selle head küljed võrreldes VanillaJS'ga.
+
 Eeliseks on see, et ei teki konflikti teiste funktsioonidega,  jQuery teeki on mugav kasutada ja kombineerida teiste programmeerimiskeeltega. 
 
 * Too välja ka mõned miinused jQuery kasutamisel.
+
 Kõik ei ole ehitatud tavalise standardi järgi.
 Suur hulk versioone. Mõned versioonid toimivad hästi teistega mõned mitte.
 
 ###### Kirjuta lihtne HTML leht, kus oled lehele importinud jQuery teegi ja kasutad seda koodis suvalisel eesmärgil.
+
 Näiteks kasutad jQuery stiilis selectorite abi HTML elemendi valimiseks koodis ja sisu muutmiseks vms.
 
   - Vihje 1: https://gist.github.com/joyrexus/5322252
@@ -157,6 +165,7 @@ Näiteks kasutad jQuery stiilis selectorite abi HTML elemendi valimiseks koodis 
   - Vihje 4: https://learn.onemonth.com/jquery-vs-javascript/
 
 #### Vastuskood
+
 ![jQuery](./index.html) 
 
 
@@ -168,10 +177,13 @@ Esitage enda lahendus (kui proovisite lahendada) ja lisaks kirjutage tagasisidek
 #### Ülesanne järgmine:
  
 ##### Kontrolltöö stsenaarium:
+
 Lõid äsja oma tarkvaraettevõtte ja sinu esimeseks kliendiks on väikese kaubavalikuga pudi-padi ja suveniiride kaupluste kett Ameerika Ühendriikides.
-Kliendi mureks on üks Javascriptil põhinev kassaprogramm, mis teatud situatsioonides arvutab kogusummat valesti. Sinu ülesanne on teha kindlaks veakoht ning parandada algoritm, mis arvutusi teostab.  
+Kliendi mureks on üks Javascriptil põhinev kassaprogramm, mis teatud situatsioonides arvutab kogusummat valesti. Sinu ülesanne on teha kindlaks veakoht ning parandada algoritm, mis arvutusi teostab.
+
 Klient ega ka sina ei saa programmi autori abile loota, sest see põgenes USA maksuameti eest Põhja Koreasse ja sattus seal veganluse propageerimise eest sunnitöölaagrisse.
 Kliendil on ka soov väikeste lisafeatuuride järele, mis on üsna triviaalsed.
+
 Sul on lahenduse jaoks väga piiratud aeg, sest peagi algab turismihooaeg ning kliendil on vaja müüki jätkata peagi saabuvate Mehhiko turistide hordidele. 
 Sa ei soovi oma ettevõttest halba muljet jätta ja nõustud antud tähtajaga. 
 
