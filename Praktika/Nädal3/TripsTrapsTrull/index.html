@@ -1,0 +1,121 @@
+<!-- Puudub osa, kui tegemist viigiga ja paar väiksest viga, mis vajavad parandamist -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripsTrapsTrull</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <div class="title"> Trips-Traps-Trull </div>
+
+    <button id="A1" class="btn"></button>
+    <button id="A2" class="btn"></button>
+    <button id="A3" class="btn"></button>
+    <button id="B1" class="btn"></button>
+    <button id="B2" class="btn"></button>
+    <button id="B3" class="btn"></button>
+    <button id="C1" class="btn"></button>
+    <button id="C2" class="btn"></button>
+    <button id="C3" class="btn"></button>
+    <button id="restart" class="button">Alusta uuesti</button>
+    <p id="gameInfo"></p>
+
+    <script>
+        /*----- app's state (variables) -----*/
+
+        let mark = "X";
+
+        /*----- cached element references -----*/
+
+        const restart = document.getElementById('restart')
+        const btn = document.getElementsByClassName("btn");
+        var msg = document.getElementById('gameInfo');
+
+        /*----- event listeners -----*/
+        Array.from(btn).forEach(function (btn) {
+            btn.addEventListener('click', myFunction);
+        });
+        restart.addEventListener('click', restartGame);
+        
+        /*----- functions -----*/
+        function myFunction() {
+            if (this.textContent == '') {
+                this.textContent = mark;
+                msg.textContent = mark + ', valiku tegemiseks kliki vabal ruudul!';
+                checkWinRow();
+                switchMark();
+                computerMove();                
+            }
+        }
+        
+        function checkWinRow() {
+            winner(A1, A2, A3);
+            winner(B1, B2, B3);
+            winner(C1, C2, C3);
+            winner(A1, B1, C1);
+            winner(A2, B2, C2);
+            winner(A3, B3, C3);
+            winner(A1, B2, C3);
+            winner(A3, B2, C1);
+        }
+
+        function winner(a, b, c) {
+            if (a.textContent == mark && b.textContent == mark && c.textContent == mark) {
+            msg.textContent = mark + ' on võitja!';
+            
+                for(var i = 0; i < btn.length; i++) {
+                btn[i].disabled = true;
+            }
+            a.classList.add('winner');
+            b.classList.add('winner');
+            c.classList.add('winner');
+            return true;
+            } else {
+                return false;
+            }
+        }
+
+        function restartGame(){
+            console.log('restart');
+            let mark = 'x';
+            console.log(mark);
+            for(var i = 0; i < btn.length; i++) {
+                btn[i].disabled = false;
+                btn[i].textContent = '';
+            }
+        }
+        
+        function switchMark() {
+            if (mark == 'X') {
+                mark = 'O';
+            } else {
+                mark = 'X';
+            }
+        }
+
+        function computerMove() {
+            let emptyCells = [];
+            let random;
+
+        Array.from(btn).forEach(function(btn){
+            if (btn.textContent == '') {
+                emptyCells.push(btn);
+            }
+         });
+         random = Math.ceil(Math.random() * emptyCells.length) - 1;
+         emptyCells[random].textContent = mark;
+         checkWinRow();
+         switchMark();
+        }
+
+    </script>
+
+</body>
+</html>
