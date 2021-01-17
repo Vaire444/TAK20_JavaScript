@@ -87,6 +87,7 @@ Tooge välja kõik vead (süntaksi vead, nõuetele vastavus, koodistiil, koodi f
 ![Alert akna pilt](./AlertPic.png)
 
 Näitamaks, et `miinimum_vanuse` väärtus muutub 18 -> 21, lisasin koodile rea `console.log("miinimum vanus on: " + miinimum_vanus)`
+
 ![Konsooli pilt](./ConsolePic.png) 
 
 #### Parandatud kood:
@@ -102,7 +103,7 @@ function calculate(vanus) {
 }
 alert('Te olete ' + calculate(21));
 ```
-
+![Konsooli pilt](./codereview.js)
 
 ### Ülesanne 5 (Levinud praktikad)
 
