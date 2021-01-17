@@ -107,7 +107,7 @@ function calculate(vanus) {
 }
 alert('Te olete ' + calculate(21));
 ```
-![Konsooli pilt](./codereview.js)
+
 
 ### Ülesanne 5 (Levinud praktikad)
 
