@@ -1,0 +1,82 @@
+:root {
+ 
+    --cell-size: 77px;
+    --restart-height: 40px;
+    --cell-spacing: 10px;
+    --tiles-bg-color: rgba(241, 157, 157, 0.712);
+    --tiles-bg-color-hover: rgba(122, 120, 120, 0.808);
+    --tiles-pink-bg-color: pink;
+    --tiles-yellow-bg-color: rgb(243, 253, 186);
+}
+
+body {
+    font-family: "Permanent Marker", cursive;
+    background-color: var(--body-bg-color);
+    display: grid;
+    grid-template-columns: var(--cell-size) var(--cell-size) var(--cell-size);
+    grid-template-rows: var(--restart-height) var(--cell-size) var(--cell-size) var(--cell-size) var(--restart-height);
+    grid-gap: var(--cell-spacing);
+    justify-content: center;
+    align-content: center;
+}
+
+.title {
+    font-size: 25px;
+    color: rgba(148, 73, 73, 0.712);
+    text-align: center;
+    width: 100%;
+    height: var(--title-height);
+    line-height: var(--title-height);
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.btn {
+    font-family: "Permanent Marker", cursive;
+    font-size: 27px;
+    background-color: var(--tiles-bg-color);
+    width: var(--cell-size);
+    height: var(--cell-size);
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    
+
+
+}
+
+#restart {
+    font-family: "Permanent Marker", cursive;
+    font-size: 20px;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: var(--restart-height);
+    color: rgba(105, 52, 52, 0.712);
+    border: none;
+}
+
+#gameInfo {
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    height: var(--title-height);
+    line-height: var(--title-height);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color:rgba(148, 73, 73, 0.712);
+
+}
+
+.btn:hover, .button:hover {
+    background-color: var(--tiles-bg-color-hover);
+}
+
+.btn.pink:after {
+    content: 'X';
+    color: var(--tiles-pink-bg-color);
+    font-size: 44px;
+    width: var(--cell-size);
+    height: var(--cell-size);
+}
+
