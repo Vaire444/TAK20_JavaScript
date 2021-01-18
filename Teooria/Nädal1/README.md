@@ -1,23 +1,23 @@
 ## Kodutöö ülesanne 1
 [Avaleht](../../README.md) > [Teooria](../README.md) > Kodutöö nr. 1
 
-1. Mis on HTML tag ``` "<noscript>" ``` ? Milleks seda kasutatakse ja mis on sellel seost
+#### 1. Mis on HTML tag ``` "<noscript>" ``` ? Milleks seda kasutatakse ja mis on sellel seost
 Javascriptiga?
 
 Tag-i ``` <noscript> ``` määratleb alternatiivse sisu, mida kuvatakse kasutajatele, kes on brauseris skriptid keelanud või
 kellel on brauser, mis skripti ei toeta.
 
-2. Mis on Vanilla Javascript (kirjapilt tihti ka VanillaJS)?
+#### 2. Mis on Vanilla Javascript (kirjapilt tihti ka VanillaJS)?
 
 VanillaJS on nimi, millele viitab tavalise JavaScripti kasutamisele ilma täiendavate teekideta nagu jQuery.
 
-3. Mis on DOM?
+#### 3. Mis on DOM?
 Dokumendi objektimudel (inglise keeles Document Object Model, lühend DOM) on platvormist ja keelest
 sõltumatu XML, XHTML ja HTML dokumentidega suhtlemise liides. Selle levinumaks rakenduseks DOM-i
 implementatsioonid erinevates brauserites, mis võimaldab JavaScriptiga veebilehtede sisu dünaamiliselt muuta.
 DOM on standardiseeritud W3C poolt.
 
-4. Mis on skoop (ingl.k "scope") programmeerimise mõistes?
+#### 4. Mis on skoop (ingl.k "scope") programmeerimise mõistes?
 Vihje: https://www.w3schools.com/js/js_scope.asp
 
 
@@ -28,7 +28,7 @@ JavaScript-il on funktsiooni skoop: iga funktsioon loob uue skoobi.
 Skoobi määrab nende muutujate ligipääsetavuse (nähtavuse).
 Funktsiooni sees määratletud muutujatele pole funktsiooni väljastpoolt juurdepääsu (nähtav).
 
-5. Mis vahe on muutujate defineerimisel kasutatavatel Javascripti keywordidel nagu let ja var?
+#### 5. Mis vahe on muutujate defineerimisel kasutatavatel Javascripti keywordidel nagu let ja var?
 Vihje: https://javascript.info/var
 
 Var ja let kasutatakse mõlemat muutuja deklareerimiseks javascriptis, kuid erinevus nende vahel on see, et var
@@ -37,7 +37,7 @@ Võib öelda, et var'iga deklareeritud muutuja on kogu programmis defineeritud v
 Muutujad, mis on deklareeritud var-ga, on kas funktsiooni või globaalse ulatusega. Need on nähtavad plokkide
 kaudu.
 
-6. Mis on ECMAScript ja mis seos on sellel Javascriptiga?
+#### 6. Mis on ECMAScript ja mis seos on sellel Javascriptiga?
  Vihje 1: https://www.w3schools.com/js/js_versions.asp
  Vihje 2: Googelda :)
  
@@ -45,7 +45,7 @@ JavaScripti standardiseeris Ecma International nime ECMAScript all. ECMAScript k
 omadustele, aga JavaScript lisaks ka veebikeskkonnale.
 JavaScript on ECMAScripti standardiga defineeritud keele ülemhulk.
 
-7. Mis on JSON? Kirjuta lihtne JSON formaadis string, mis sisaldab 5 kursusekaaslase nime
+#### 7. Mis on JSON? Kirjuta lihtne JSON formaadis string, mis sisaldab 5 kursusekaaslase nime
 Vihje 1: https://www.w3schools.com/js/js_json.asp
 Vihje 2: JSON stringi saab ka kui Javascript objekt stringiks teha:
 https://www.w3schools.com/js/js_json_stringify.asp
@@ -66,7 +66,7 @@ puhul kiiremat töötlemist.
 ]
 }
 ```
-8. Mis on AJAX? Mis on peamine piirang AJAX päringu teostamisel?
+#### 8. Mis on AJAX? Mis on peamine piirang AJAX päringu teostamisel?
 Vihje: Vastuse piirangu osas leiab siit: https://www.w3schools.com/js/js_ajax_http.asp
 
 AJAX (Asynchronous JavaScript And XML)
@@ -74,7 +74,7 @@ Asünkroonne JavaScript ja XML – lühend AJAX võeti kasutusele 2005.a. ja sel
 interaktiivsete veebirakenduste loomise meetodit, kus toimub jooksev kulissidetagune andmevahetus brauseri ja
 veebiserveri vahel, nii et kasutaja iga liigutuse peale pole vaja kogu veebilehte uuesti alla laadida.
 
-9. Mis vahe on kui javascript pannakse HTML-s ``` <head> ``` tagide vahele vs ``` <body> ``` tagide vahele vahetult
+#### 9. Mis vahe on kui javascript pannakse HTML-s ``` <head> ``` tagide vahele vs ``` <body> ``` tagide vahele vahetult
 enne ``` </body> ``` tagi?
 Vihje: https://www.w3schools.com/js/js_whereto.asp
 
@@ -83,7 +83,7 @@ Skripte saab paigutada HTML-lehe jaotisesse ``` <body> ``` või ``` <head> ``` v
 Skriptide paigutamine elemendi ``` <body> ``` alaossa parandab kuva kiirust, kuna skripti tõlgendamine aeglustab
 kuva.
 
-10. Võta lahti mõni veebileht Google Chromega. Ava konsool (CTRL + Shift + j) ja trüki konsooli järgnev:
+#### 10. Võta lahti mõni veebileht Google Chromega. Ava konsool (CTRL + Shift + j) ja trüki konsooli järgnev:
 document.designMode = 'on';
 Mis selle tagajärjel juhtus? Mida veebilehega nüüd teha saab?
 
