@@ -1,4 +1,4 @@
-[Avaleht](../../../../README.md) > [Teooria](../../../README.md) > [Nädal4](../../README.md)
+
 
 ### Ülesanne 7 (Valikuline ülesanne - veebipoe parandused)
 
