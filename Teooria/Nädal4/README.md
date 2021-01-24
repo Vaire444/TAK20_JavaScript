@@ -155,7 +155,7 @@ Eeliseks on see, et ei teki konflikti teiste funktsioonidega,  jQuery teeki on m
 Kõik ei ole ehitatud tavalise standardi järgi.
 Suur hulk versioone. Mõned versioonid toimivad hästi teistega mõned mitte.
 
-###### Kirjuta lihtne HTML leht, kus oled lehele importinud jQuery teegi ja kasutad seda koodis suvalisel eesmärgil.
+#### Kirjuta lihtne HTML leht, kus oled lehele importinud jQuery teegi ja kasutad seda koodis suvalisel eesmärgil.
 
 Näiteks kasutad jQuery stiilis selectorite abi HTML elemendi valimiseks koodis ja sisu muutmiseks vms.
 
