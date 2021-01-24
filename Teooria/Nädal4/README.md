@@ -30,7 +30,7 @@ Tee test: https://www.w3schools.com/quiztest/quiztest.asp?qtest=JavaScript
 Ole enda vastu aus - kasuta vaid seni omandatud teadmisi.
 Ülesande vastuseks kirjuta saadud tulemus.
 #### Testi tulemus:
-![Testi tulemus](./result.png) 
+[Testi tulemus](./result.png) 
 
 
 ### Ülesanne 3 (Javascripti "uuemad" featuurid)
